@@ -1,6 +1,6 @@
 # Docker
 
-<p align="center"><img src="img/2_1.png" width="80%"></p>
+<p align="center"><img src="img/ch2/2_1.png" width="80%"></p>
 
 ## Container
 
@@ -20,7 +20,7 @@
 - Container
     - Image를 격리하여 독립된 공간에서 실행한 가상 환경.
 
-<p align="center"><img src="img/2_2.png" width="80%"></p>
+<p align="center"><img src="img/ch2/2_2.png" width="80%"></p>
 
 - Docker engine : 이미지, 네트워크, 디스크 등의 관리 역할
 - Containerd : OCI 구현체(runC)를 이용해 container를 관리해주는 daemon
@@ -36,14 +36,14 @@
 
 ## Docker life cycle
 
-<p align="center"><img src="img/2_3.png" width="80%"></p>
+<p align="center"><img src="img/ch2/2_3.png" width="80%"></p>
 
 - Run시, Image가 존재한다면 가지고 있는 pull 없이 CREATE와 START만 실행.
 - Run시, 주의할 점은 Run 실행 시마다 계속 container가 새롭게 생성 및 실행됨. 따라서 create가 필요한 경우에만 run을 사용하던지, create와 start 명령어를 따로 사용하는게 좋음.
 
 ## Image Layer의 개념
 
-<p align="center"><img src="img/2_4.png" width="80%"></p>
+<p align="center"><img src="img/ch2/2_4.png" width="80%"></p>
 
 - Image A에서 작업을 진행하다가 필요에 따라, layer D를 추가한 Image B를 만들 수 있음.
 - 이때 Image B를 push 하면 layer D 만 push 됨.

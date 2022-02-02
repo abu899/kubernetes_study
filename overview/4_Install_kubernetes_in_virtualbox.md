@@ -42,17 +42,17 @@ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab #set swapoff permanately
 - Worker node 복제 전, NAT network 추가를 위해 파일→ 환경 설정 → 네트워크 탭으로 이동.
 - 새 NAT network 추가.
 
-<p align="center"><img src="img/4_1.png" width="80%"></p>
+<p align="center"><img src="img/ch4/4_1.png" width="80%"></p>
 
 - 가상 머신의 설정에 들어가서 방금 만든 NatNetwork를 설정.
 
-<p align="center"><img src="img/4_2.png" width="80%"></p>
+<p align="center"><img src="img/ch4/4_2.png" width="80%"></p>
 
 5. 가상 머신 복제
 
 - Worker node 생성을 위해 현재 가상 시스템을 복제 하는데, 이때 주의 할 점은 MAC 주소 정책의 옵션을 반드시 새 MAC 주소 생성으로 해줘야 함.
 
-<p align="center"><img src="img/4_3.png" width="80%"></p>
+<p align="center"><img src="img/ch4/4_3.png" width="80%"></p>
 
 - 그 이후 옵션은 완전한 복제 → 현재 머신 상태 → 복제로 진행.
 

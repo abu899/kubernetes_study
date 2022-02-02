@@ -14,7 +14,7 @@
     - 컨테이너간 디스크 볼륨을 공유. 최근 어플리케이션뿐만 아니라, 로그 수집기, 리버스 프록시 등이 같이 주변 솔루션과 배포되는 경우가 많음. 특히 로그 수집기의 경우 컨테이너가 분리된 경우 파일 시스템이
       분리되어 로그 파일이 읽는 것이 불가능하지만, 같은 pod내의 컨테이너의 경우 볼륨을 공유하여 가능.
 
-<p align="center"><img src="img/6_1.png" width="80%"></p>
+<p align="center"><img src="img/ch6/6_1.png" width="80%"></p>
 
 ```bash
 kubectl run echo --image ghcr.io/subicura/echo:v1
@@ -22,7 +22,7 @@ kubectl run echo --image ghcr.io/subicura/echo:v1
 
 # Pod이 생성되는 과정
 
-<p align="center"><img src="img/6_2.png" width="80%"></p>
+<p align="center"><img src="img/ch6/6_2.png" width="80%"></p>
 
 1. Scheduler가 apiserver를 감시하면 unassigned 된 pod이 있는지 감시.
 2. 이를 감지하면 scheduler가 적절한 노드에 pod을 할당.

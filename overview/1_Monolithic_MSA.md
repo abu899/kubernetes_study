@@ -27,4 +27,4 @@
     - 네트워크로 통신하기 떄문에 네트워크 레이턴시와 트래픽 증가
     - 배포에 대한 자동화가 강제.
 
-<p align="center"><img src="./img/1_1.png" width="80%"></p>
+<p align="center"><img src="img/ch1/1_1.png" width="80%"></p>

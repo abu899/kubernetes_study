@@ -36,11 +36,11 @@
 - Ecosystem이 잘 갖춰져 있음.
 - 다양한 배포방식
 
-<p align="center"><img src="img/3_1.png" width="80%"></p>
+<p align="center"><img src="img/ch3/3_1.png" width="80%"></p>
 
 ## 기본 개념
 
-<p align="center"><img src="img/3_2.png" width="80%"></p>
+<p align="center"><img src="img/ch3/3_2.png" width="80%"></p>
 
 - Desire State
     - 관리자가 바라는 환경
@@ -48,7 +48,7 @@
     - 관리자는 직접 명령을 내리지 않고 상태를 선언하는 방식을 사용해야함.
       Run과 같은 직접 실행 명령(imperative)이 아닌, Create와 같은 상태 생성(declative).
 
-<p align="center"><img src="img/3_3.png" width="80%"></p>
+<p align="center"><img src="img/ch3/3_3.png" width="80%"></p>
 
 - Kubernetes Objects
     - Pod
@@ -71,7 +71,7 @@
 
 ## 쿠버네티스 클러스터 아키텍쳐
 
-<p align="center"><img src="img/3_4.png" width="80%"></p>
+<p align="center"><img src="img/ch3/3_4.png" width="80%"></p>
 
 ### 마스터 노드 
 - 전체 쿠버네티스 시스템을 관리하고 통제하는 컨트롤 플레인을 관장.
@@ -111,7 +111,7 @@
 
 ## 워커 노드
 
-<p align="center"><img src="img/3_5.png" width="80%"></p>
+<p align="center"><img src="img/ch3/3_5.png" width="80%"></p>
 
 - 실제 배포하고자 하는 어플리케이션의 실행을 담당.
 - kublet :
@@ -134,11 +134,11 @@
     - 위 네 가지로 구성. (kube-apiserver, kube-scheduler, controller-manager, etcd)
 
 
-<p align="center"><img src="img/3_6.png" width="80%"></p>
+<p align="center"><img src="img/ch3/3_6.png" width="80%"></p>
 
 ## 실제 하나의 pod이 생성되는 흐름
 
-<p align="center"><img src="img/3_7.png" width="80%"></p>
+<p align="center"><img src="img/ch3/3_7.png" width="80%"></p>
 
 - 각 모듈은 오직 API server와 통신.
 - API server를 통해 etcd에 저장된 desired state에 필요한 작업을 수행.

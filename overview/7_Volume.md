@@ -39,7 +39,7 @@ spec:
 
 # Host path
 
-<p align="center"><img src="img/7_1.png" width="80%"></p>
+<p align="center"><img src="img/ch7/7_1.png" width="80%"></p>
 
 - 노드의 디스크 경로를 pod에 마운트하여 사용하는 것.
 - 여러 사이의 pod 사이에 공유해서 사용 가능.
@@ -70,7 +70,7 @@ spec:
 
 # GitRepo
 
-<p align="center"><img src="img/7_2.png" width="50%"></p>
+<p align="center"><img src="img/ch7/7_2.png" width="50%"></p>
 
 - git repository의 특정 revision을 clone하여 내려받은 후 디스크 볼륨을 생성.
 - empty dir로생성.
@@ -104,7 +104,7 @@ spec:
 
 # PersistentVolume and PersistentVolumeClaim
 
-<p align="center"><img src="img/7_3.png" width="80%"></p>
+<p align="center"><img src="img/ch7/7_3.png" width="80%"></p>
 
 - 쿠버네티스는 추상화를 통해, 인프라(컨테이너, 디스크, 네트워크 등)를 손쉽게 설정할 수 있도록하는 개념을 가지고 있음.
 - 인프라에 종속적인 부분은 시스템 관리자가 설정하고, 개발자는 간단하게 사용 가능하도록 디스크 볼륨에 PersistentVolume(PV)와 PersistentVolumeClaim(PVC)라는 개념을 도입.
@@ -197,7 +197,7 @@ spec:
 
 # Dynamic provisioning
 
-<p align="center"><img src="img/7_4.png" width="80%"></p>
+<p align="center"><img src="img/ch7/7_4.png" width="80%"></p>
 
 - Pod에 Persistent Volume을 연결하는것은 물리 디스크 생성→ 생성된 물리디스크를 PV로 선언 → PV와 PVC 연결 → Pod 에서 사용의 순서
 - 쿠버네티스에서는 이 작업이 수동이 아닌, 자동으로 진행시킬 수 있는 dynamic provisioning 지원.
